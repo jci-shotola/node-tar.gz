@@ -53,7 +53,7 @@ class TarGz
                 props = noProprietary : false if self.proprietary == true
                 props = noProprietary : true if self.proprietary == false
 
-                reader.pipe(tar.Pack(props)).pipe(gzip).pipe fstream.Writer(destination).on 'close', ->
+                reader.pipe(tar.Pack(props)).pipe(gzip).pipe destination.on 'close', ->
                     callback null if typeof callback == 'function'
         @
 
