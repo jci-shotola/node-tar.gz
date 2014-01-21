@@ -4,7 +4,7 @@
 # @version 0.0.1
 # @date 2012-12-06 128:41 GMT -3:00
 # @license MIT <http://en.wikipedia.org/wiki/MIT_License#License_terms>
-
+  
 util = require 'util'
 walker = require 'walk'
 wrench = require 'wrench'
